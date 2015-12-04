@@ -1,10 +1,12 @@
 # es
-ES wrapper for bulk insert, search,etc.
-
-# Todo
- - Bulk insert should be able to have bulk threads configurable before insertion, keep bulk active + queue in control 
- - Search and bulk should be able to understand responses
- - Bull insert should have tcp no_delay type of mode where bulk requests should be buffered or NOT
- - ORM layer search  ( if possible)
- - CLI option for cluster reallocation stopping and starting , threadpool control, node close , and IF possible graceful restart of a node
- - 
+A wrapper that helps you play with *Elastic Search* APIs using events. Abiding by the Keep It Simple Silly ( *KISS* ) principle, its for, you know, *search*. 
+​
+#*Key Features*
+> - Bulk insert has bulk threads configurable before insertion, keeps bulk active + queue in control
+> - Implementation of Callbacks.
+> - Support for private certificates with passwords
+​
+#APIs Supported
+> - Scan and scroll 
+> - Bulk (all modes)
+​
